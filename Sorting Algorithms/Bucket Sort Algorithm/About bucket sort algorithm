@@ -1,0 +1,17 @@
+Bucket sort is one of the O(N) sorting algorithm like Radix sort and Counting sort. Since it runs in linear 
+time (O(N)) so Bucket sort is faster than the comparison based algorithms like Merge Sort or Quick Sort.Just 
+like Counting sort, Bucket sort also makes some assumption about the input data beforehand like data should 
+be uniformly distributed and should be with in a range.
+
+Bucket sort works by assigning the input elements to different buckets and then sorting those buckets individually 
+using any sorting technique like insertion sort so the elements in those buckets are sorted. After that merge the 
+buckets to get the sorted output. For distributing the elements to the buckets uniformly a good hash function is 
+needed. The hash code given by hash function should also be an ordered hash such that if element i is greater than 
+element j then hash(i) should also be greater than hash(j).
+
+Average time complexity of Bucket sort is considered O(n+k) where O(n) is the time spent in distributing elements 
+across the buckets and sorting them and O(k) is the time spent in merging the buckets. In worst case when most 
+of the elements land in the same bucket time complexity is O(n2). Space complexity of Bucket sort is O(n+k) as an 
+auxiliary array of size k is needed for buckets. Each index of that bucket array holds reference to a list, total 
+number of nodes in all those lists will be n making the total auxiliary space requirement as (n+k).
+
