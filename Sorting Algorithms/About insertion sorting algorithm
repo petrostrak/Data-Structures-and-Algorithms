@@ -1,0 +1,28 @@
+The algorithm proceeds by considering one element at a time, placing the element in the correct
+order relative to those before it.
+
+• We start with the first element in the array, which is trivially sorted by itself. When considering the
+next element in the array, if it is smaller than the first, we swap them.
+
+• Next, we consider the third element in the array, swapping it leftward until it is in its proper order
+relative to the first two elements.
+
+• We continue in this manner with the fourth element, the fifth, and so on, until the whole array is
+sorted.
+
+Insertion Sort Complexity
+
+• The best-case input is an array that is already sorted. In this case insertion sort has a linear running
+time (i.e., O(n)).
+
+• The simplest worst-case input is an array sorted in reverse order. The set of all worst-case inputs
+consists of all arrays where each element is the smallest or second-smallest of the elements before
+it.
+
+• In these cases every iteration of the inner loop will scan and shift the entire sorted subsection of
+the array before inserting the next element.
+
+• This gives insertion sort a quadratic running time (i.e., O(n2)).
+
+• Insertion sort is impractical for sorting large arrays. However, it is one of the fastest algorithms for
+sorting very small arrays.
