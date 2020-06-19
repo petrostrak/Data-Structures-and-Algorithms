@@ -1,0 +1,17 @@
+Binary Search: 
+
+Search a sorted array by repeatedly dividing the search interval in half. Begin with 
+an interval covering the whole array. If the value of the search key is less than the 
+item in the middle of the interval, narrow the interval to the lower half. Otherwise 
+narrow it to the upper half. Repeatedly check until the value is found or the interval 
+is empty.
+
+Binary Search Complexity 
+
+Binary search has a worst-case and average-case running time of O(logn), making O(logn) comparisons,
+where n is the number of elements in the array.
+
+The worst case occurs when a given target element is not in the list at all.
+
+Binary search has an O(1) best case running time. This occurs when the first midpoint selected is the target
+value.
