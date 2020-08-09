@@ -1,4 +1,4 @@
-package stack;
+package stackArrays;
 
 public class App {
 
@@ -12,10 +12,8 @@ public class App {
 		
 		System.out.println(myStack.size());
 		
-		// Last In First Out
 		System.out.println(myStack.pop());
 		System.out.println(myStack.pop());
 		System.out.println(myStack.pop());
 	}
-
 }
