@@ -6,14 +6,13 @@ public class App {
 		Tree<Integer> bst = new BinarySearchTree<>();
 		
 		bst.insert(10);
-		bst.insert(3);
+		bst.insert(-1);
+		bst.insert(1);
 		bst.insert(0);
-		bst.insert(43);
-		bst.insert(-6);
-		bst.insert(22);
-		bst.insert(22);
+		bst.insert(1000);
+		bst.insert(-22);
 		
-		bst.delete(43);
+//		bst.delete(43);
 		bst.traversal();
 //		System.out.println(bst.getMinValue());
 	}
