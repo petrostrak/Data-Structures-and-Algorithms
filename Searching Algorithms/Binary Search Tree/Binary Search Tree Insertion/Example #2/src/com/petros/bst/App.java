@@ -13,6 +13,8 @@ public class App {
 		bst.insert(22);
 		bst.insert(22);
 		
-		System.out.println(bst.getMinValue());
+		bst.delete(43);
+		bst.traversal();
+//		System.out.println(bst.getMinValue());
 	}
 }
