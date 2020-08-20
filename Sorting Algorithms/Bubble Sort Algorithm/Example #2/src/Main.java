@@ -13,7 +13,7 @@ public class Main {
 		
 		int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 		
-		// the last index is will store the largest number so we decrement in every iteration
+		// the last index will store the largest number so we decrement in every iteration
 		for (int lastUnsortedIndex = intArray.length -1; lastUnsortedIndex > 0; lastUnsortedIndex --) {
 			// we traverse from index 0 until the last unsorted index
 			for (int i = 0; i < lastUnsortedIndex; i ++) {
